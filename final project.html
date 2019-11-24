@@ -1,0 +1,44 @@
+<html>
+<head>
+  <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="final project.js"></script>
+  <link href="final project.css" rel="stylesheet" type="text/css"/>
+  <title>Report</title>
+</head>
+<body>
+  <form onsubmit="return validate(this)">
+  <div class= "enterData">
+    <div>
+    <input type="text" size="60" name="ID" id="ID" value="Please enter your RPI ID" onfocus="test1(this)" onblur="test2(this)"></input>
+    </div>
+    <label class="field" for="Loc">Location:</label>
+    <input class= "loc" id="loc" value="Please enter the location you want to report here" size="60" onfocus="test7(this)" onblur="test8(this)">
+    <div class="rangeslider">
+       <p> ratings:</p>
+       <input type= "range" min="1" max="10" step="1" id= "slide"></input>
+       <ul class="range-labels">
+        <li>&emsp;&emsp;Safe &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Comfortable &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;              Uncomfortable   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;            Danger     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;           Never go again</li>
+      </ul>
+    </div>
+  <br>
+  <br>
+ <p>Recommendations:</p>
+ <label for="tra">Travel in groups</label>
+ <input type="checkbox" name="tra" value="tra" id="tra"/><br/>
+ <label for="saf">Safer than Airplanes</label>
+ <input type="checkbox" name="saf" value="saf" id="saf"/><br/>
+ <label for="ge">Get transportation</label>
+ <input type="checkbox" name="ge" value="ge" id="ge"/><br/>
+ <label for="pas">Pass Quickly</label>
+ <input type="checkbox" name="pas" value="pas" id="pas"/><br/>
+ <label for="pai">Travel in pairs</label>
+ <input type="checkbox" name="pai" value="pai" id="pai"/><br/>
+ <label for="don">Don't talk to strangers</label>
+ <input type="checkbox" name="don" value="don" id="don"/><br/>
+ <label for="ins">Get Inside</label>
+ <input type="checkbox" name="ins" value="ins" id="ins"/><br/>
+ <textarea rows="8" cols="80" name="comments" id="comments" onfocus="test5(this)" onblur="test6(this)">I have some comments...(optional)</textarea>
+  </div>
+<input type="submit" value="submit" id="submit" name="submit"/>
+</body>
+</html>
